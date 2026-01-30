@@ -1,0 +1,68 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: #2f4f4f;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.search-bar {
+  background: #708090;
+  padding: 1rem;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  width: 200px;
+}
+
+.search-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Weather */
+
+.weather-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.temp {
+  font-size: 2rem;
+}
+
+.location-time {
+  text-align:left;
+}
+
+.time {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.icon {
+  font-size: 3rem;
+}
