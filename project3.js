@@ -1,4 +1,4 @@
-console.log("JS Loaded");
+
 
 const input = document.querySelector("input");
 const button = document.querySelector(".search-btn");
