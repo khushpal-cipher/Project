@@ -1,23 +1,23 @@
 
 
-const input = document.querySelector("input");
-const button = document.querySelector(".search-btn");
-const locationEl = document.querySelector(".city");
-const temperatureEl = document.querySelector(".temp");
+const in = document.querySelector("input");
+const bt = document.querySelector(".search-btn");
+const location = document.querySelector(".city");
+const temperature = document.querySelector(".temp");
 
-console.log(input, button, locationEl, temperatureEl);
+console.log(in, bt, location, temperature);
 
-button.addEventListener("click", (e) => {
+bt.addEventListener("click", (e) => {
     e.preventDefault(); 
 
-    const city = input.value.trim();
+    const city = in.value.trim();
 
     if (!city) {
         alert("Enter a city name");
         return;
     }
 
-    input.value = "";
+    in.value = "";
 
     const api = `https://api.weatherapi.com/v1/current.json?key=fcdd7995da7d475eabb123833263001&q=${city}&aqi=no`;
 
